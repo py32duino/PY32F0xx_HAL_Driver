@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -1367,4 +1367,4 @@ void LL_DMA_StructInit(LL_DMA_InitTypeDef *DMA_InitStruct);
 
 #endif /* __PY32F0XX_LL_DMA_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

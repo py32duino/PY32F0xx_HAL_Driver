@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -26,7 +26,7 @@
 #include "py32f0xx_ll_rtc.h"
 #include "py32f0xx_ll_cortex.h"
 #ifdef  USE_FULL_ASSERT
-#include "py32_assert.h"
+#include "air_assert.h"
 #else
 #define assert_param(expr) ((void)0U)
 #endif
@@ -547,4 +547,4 @@ ErrorStatus LL_RTC_WaitForSynchro(RTC_TypeDef *RTCx)
 
 #endif /* USE_FULL_LL_DRIVER */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

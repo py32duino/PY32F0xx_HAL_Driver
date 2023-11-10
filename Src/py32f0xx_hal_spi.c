@@ -195,7 +195,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -762,9 +762,6 @@ HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint
     goto error;
   }
 
-  /* Disable SPI peripheral */
-  __HAL_SPI_DISABLE(hspi);
-
   /* Set the transaction information */
   hspi->State       = HAL_SPI_STATE_BUSY_TX;
   hspi->ErrorCode   = HAL_SPI_ERROR_NONE;
@@ -782,6 +779,8 @@ HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint
   /* Configure communication direction : 1Line */
   if (hspi->Init.Direction == SPI_DIRECTION_1LINE)
   {
+    /* Disable SPI peripheral */
+    __HAL_SPI_DISABLE(hspi);
     SPI_1LINE_TX(hspi);
   }
 
@@ -3726,4 +3725,4 @@ static void SPI_AbortTx_ISR(SPI_HandleTypeDef *hspi)
   * @}
   */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

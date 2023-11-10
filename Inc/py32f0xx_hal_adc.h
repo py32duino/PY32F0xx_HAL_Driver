@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -75,6 +75,13 @@ typedef struct
   FunctionalState LowPowerAutoWait;      /*!< Selects the dynamic low power Auto Delay: new conversion start only when the previous
                                        conversion (for regular group) has been treated by user software, using function HAL_ADC_GetValue().
                                        This feature automatically adapts the ADC conversions trigs to the speed of the system that reads the data. Moreover, this avoids risk of overrun for low frequency applications.
+                                       This parameter can be set to ENABLE or DISABLE.
+                                       Note: Do not use with interruption or DMA (HAL_ADC_Start_IT(), HAL_ADC_Start_DMA()) since they have to clear immediately the EOC flag to free the IRQ vector sequencer.
+                                             Do use with polling: 1. Start conversion with HAL_ADC_Start(), 2. Later on, when conversion data is needed: use HAL_ADC_PollForConversion() to ensure that conversion is completed
+                                             and use HAL_ADC_GetValue() to retrieve conversion result and trig another conversion. */
+  FunctionalState LowPowerAutoPowerOff;      /*!< Selects the dynamic low power Auto Delay: new conversion start only when the previous
+                                       conversion (for regular group) has been treated by user software, using function HAL_ADC_GetValue().
+                                       This feature automatically adapts the ADC conversions trigs to the speed of the system that reads the data. Moreover, this avoids risk of overrun for low frequency applications. 
                                        This parameter can be set to ENABLE or DISABLE.
                                        Note: Do not use with interruption or DMA (HAL_ADC_Start_IT(), HAL_ADC_Start_DMA()) since they have to clear immediately the EOC flag to free the IRQ vector sequencer.
                                              Do use with polling: 1. Start conversion with HAL_ADC_Start(), 2. Later on, when conversion data is needed: use HAL_ADC_PollForConversion() to ensure that conversion is completed
@@ -1155,5 +1162,5 @@ uint32_t                HAL_ADC_GetError(ADC_HandleTypeDef *hadc);
 
 #endif /* __PY32F0xx_HAL_ADC_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/
 

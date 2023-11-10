@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -620,4 +620,4 @@ uint32_t               HAL_USART_GetError(USART_HandleTypeDef *husart);
 
 #endif /* __PY32F0xx_HAL_USART_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

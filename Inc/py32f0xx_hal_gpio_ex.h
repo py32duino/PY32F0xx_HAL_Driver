@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -50,7 +50,7 @@ extern "C" {
   * @{
   */
 /*------------------------- PY32F0xx ------------------------*/
-#if (defined(PY32F003PRE)|| defined(PY32F030PRE))
+#if (defined(PY32F003PRE)|| defined(PY32F030PRE) || defined(PY32F002APRE))
 /**
   * @brief   AF 0 selection
   */
@@ -277,4 +277,4 @@ extern "C" {
 
 #endif /* __PY32F0xx_HAL_GPIO_EX_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

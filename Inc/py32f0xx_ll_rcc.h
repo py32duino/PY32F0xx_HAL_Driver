@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -1881,7 +1881,7 @@ ErrorStatus LL_RCC_DeInit(void);
 void        LL_RCC_GetSystemClocksFreq(LL_RCC_ClocksTypeDef *RCC_Clocks);
 uint32_t    LL_RCC_GetMCOClockFreq(uint32_t MCOx);
 uint32_t    LL_RCC_GetLSCClockFreq(void);
-#if defined(PVD)
+#if defined(RCC_CCIPR_PVDSEL)
 uint32_t    LL_RCC_GetPVDClockFreq(void);
 #endif
 #if defined(COMP1)
@@ -1890,7 +1890,7 @@ uint32_t    LL_RCC_GetCOMPClockFreq(uint32_t COMPx);
 #if defined(LPTIM1)
 uint32_t    LL_RCC_GetLPTIMClockFreq(uint32_t LPTIMx);
 #endif 
-#if defined(TRC)
+#if defined(RCC_BDCR_RTCSEL)
 uint32_t    LL_RCC_GetRTCClockFreq(void);
 #endif
 /**
@@ -1918,4 +1918,4 @@ uint32_t    LL_RCC_GetRTCClockFreq(void);
 
 #endif /* __PY32F0XX_LL_RCC_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -31,7 +31,7 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "py32f0xx_hal_def.h"
 
-/** @addtogroup PY32F1xx_HAL_Driver
+/** @addtogroup AIRF1xx_HAL_Driver
   * @{
   */
 
@@ -712,4 +712,4 @@ uint32_t HAL_I2C_GetError(I2C_HandleTypeDef *hi2c);
 
 #endif /* __PY32F0xx_HAL_I2C_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

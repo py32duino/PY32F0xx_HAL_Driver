@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -342,6 +342,8 @@ typedef struct
   */
 #define RCC_HSI_OFF                    0x00000000U            /*!< HSI clock deactivation */
 #define RCC_HSI_ON                     RCC_CR_HSION           /*!< HSI clock activation */
+
+#define RCC_HSICALIBRATION_DEFAULT       (0x10U)         /* Default HSI calibration trimming value */
 /**
   * @}
   */
@@ -1758,4 +1760,4 @@ void              HAL_RCC_CSSCallback(void);
 
 #endif /* __PY32F0xx_HAL_RCC_H */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/

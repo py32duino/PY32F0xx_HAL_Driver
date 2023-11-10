@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co.
+  * <h2><center>&copy; Copyright (c) Puya Semiconductor Co..
   * All rights reserved.</center></h2>
   *
   * <h2><center>&copy; Copyright (c) 2016 STMicroelectronics.
@@ -24,7 +24,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "py32f0xx_ll_exti.h"
 #ifdef  USE_FULL_ASSERT
-  #include "py32_assert.h"
+  #include "air_assert.h"
 #else
   #define assert_param(expr) ((void)0U)
 #endif /* USE_FULL_ASSERT */
@@ -235,4 +235,4 @@ void LL_EXTI_StructInit(LL_EXTI_InitTypeDef *EXTI_InitStruct)
 
 #endif /* USE_FULL_LL_DRIVER */
 
-/************************ (C) COPYRIGHT Puya *****END OF FILE****/
+/************************ (C) COPYRIGHT Puya Semiconductor Co. *****END OF FILE****/
